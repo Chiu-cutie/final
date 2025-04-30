@@ -15,30 +15,29 @@
 .email-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    background-color: #D44638;
+    gap: 10px;
+    padding: 12px 25px;
+    background-color: #D44638; /* Gmail Red */
     color: white !important;
     border-radius: 30px;
     margin-top: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease;
-    max-width: 100%;
-    white-space: nowrap; /* Keep content in one line */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Prevent overflow with ... */
+    max-width: 100%; /* Ensure it stays within the parent container */
+    overflow-wrap: break-word; /* Break long email addresses */
+    white-space: normal; /* Allow text to wrap inside */
 }
 
 .email-link:hover {
     transform: scale(1.05);
 }
 
-/* Slightly smaller text and padding on mobile */
+/* Mobile view adjustments */
 @media (max-width: 768px) {
     .email-link {
-        font-size: 13px;
-        padding: 10px 16px;
+        font-size: 14px; /* Smaller font size on mobile */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
     }
 }
 
