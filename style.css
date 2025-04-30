@@ -36,7 +36,7 @@
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     .email-link {
-        font-size: 14px; /* Smaller font size on mobile */
+        font-size: 12px; /* Smaller font size on mobile */
         padding: 10px 20px; /* Adjust padding for smaller screens */
     }
 }
